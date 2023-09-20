@@ -1,5 +1,6 @@
 import { app, BrowserWindow } from 'electron'
 import path from 'node:path'
+import {IPCHandler} from "./ipc.ts";
 
 // The built directory structure
 //
@@ -23,9 +24,6 @@ function createWindow() {
     icon: path.join(process.env.VITE_PUBLIC, 'electron-vite.svg'),
     webPreferences: {
       preload: path.join(__dirname, 'preload.js'),
-      nodeIntegration: true,
-      nodeIntegrationInWorker: false,
-      contextIsolation: false,
       webSecurity: false,
       allowRunningInsecureContent: true
     },
@@ -63,4 +61,9 @@ app.on('activate', () => {
   }
 })
 
-app.whenReady().then(createWindow)
+let ipc:IPCHandler
+
+app.whenReady().then(() => {
+  createWindow()
+  ipc = new IPCHandler()
+})

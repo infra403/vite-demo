@@ -2,7 +2,7 @@ import {useEffect, useState} from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/electron-vite.animate.svg'
 import './App.css'
-import { Button } from 'antd';
+import {Button, message} from 'antd';
 import {executeGetPrice, initClient} from "./worker/client.ts";
 import {initWorker} from "./worker/worker.ts";
 
@@ -14,13 +14,26 @@ function App() {
     },[])
 
     const init = async () => {
-        await initClient()
-        await initWorker()
+        window.ipcRenderer.invoke("init").then(response => {
+            if (response.success) {
+                message.success("init success")
+            } else {
+                message.error(`init failed: ${response.message}`)
+            }
+        })
     }
 
     const click = async () => {
         const result = await executeGetPrice()
         console.log("click price", result)
+
+        window.ipcRenderer.invoke("getPrice").then(response => {
+            if (response.success) {
+                message.success("gasPrice: " + response.data)
+            } else {
+                message.error(`gasPrice: ${response.message}`)
+            }
+        })
     }
   return (
     <>
