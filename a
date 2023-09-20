@@ -1,0 +1,922 @@
+✘ [ERROR] Failed to resolve entry for package "@webassemblyjs/ast". The package may have incorrect main/module/exports specified in its package.json. [plugin vite:dep-pre-bundle]
+
+    node_modules/esbuild/lib/main.js:1373:21:
+      1373 │         let result = await callback({
+           ╵                      ^
+
+    at packageEntryFailure (file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:28691:11)
+    at resolvePackageEntry (file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:28688:5)
+    at tryNodeResolve (file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:28419:20)
+    at Context.resolveId (file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:28180:28)
+    at Object.resolveId (file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:44207:64)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:65837:21
+    at async file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:39941:34
+    at async requestCallbacks.on-resolve (/Users/xp/Documents/airport/demos/vite-demo/node_modules/esbuild/lib/main.js:1373:22)
+    at async handleRequest (/Users/xp/Documents/airport/demos/vite-demo/node_modules/esbuild/lib/main.js:729:13)
+
+  This error came from the "onResolve" callback registered here:
+
+    node_modules/esbuild/lib/main.js:1292:20:
+      1292 │       let promise = setup({
+           ╵                     ^
+
+    at setup (file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:39921:19)
+    at handlePlugins (/Users/xp/Documents/airport/demos/vite-demo/node_modules/esbuild/lib/main.js:1292:21)
+    at buildOrContextImpl (/Users/xp/Documents/airport/demos/vite-demo/node_modules/esbuild/lib/main.js:978:5)
+    at Object.buildOrContext (/Users/xp/Documents/airport/demos/vite-demo/node_modules/esbuild/lib/main.js:786:5)
+    at /Users/xp/Documents/airport/demos/vite-demo/node_modules/esbuild/lib/main.js:2186:68
+    at new Promise (<anonymous>)
+    at Object.context (/Users/xp/Documents/airport/demos/vite-demo/node_modules/esbuild/lib/main.js:2186:27)
+    at Object.context (/Users/xp/Documents/airport/demos/vite-demo/node_modules/esbuild/lib/main.js:2026:58)
+    at prepareEsbuildOptimizerRun (file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:45967:35)
+
+  The plugin "vite:dep-pre-bundle" was triggered by this import
+
+    node_modules/webpack/lib/wasm-sync/WebAssemblyParser.js:8:18:
+      8 │ const t = require("@webassemblyjs/ast");
+        ╵                   ~~~~~~~~~~~~~~~~~~~~
+
+✘ [ERROR] Failed to resolve entry for package "@webassemblyjs/ast". The package may have incorrect main/module/exports specified in its package.json. [plugin vite:dep-pre-bundle]
+
+    node_modules/esbuild/lib/main.js:1373:21:
+      1373 │         let result = await callback({
+           ╵                      ^
+
+    at packageEntryFailure (file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:28691:11)
+    at resolvePackageEntry (file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:28688:5)
+    at tryNodeResolve (file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:28419:20)
+    at Context.resolveId (file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:28180:28)
+    at Object.resolveId (file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:44207:64)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:65837:21
+    at async file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:39941:34
+    at async requestCallbacks.on-resolve (/Users/xp/Documents/airport/demos/vite-demo/node_modules/esbuild/lib/main.js:1373:22)
+    at async handleRequest (/Users/xp/Documents/airport/demos/vite-demo/node_modules/esbuild/lib/main.js:729:13)
+
+  This error came from the "onResolve" callback registered here:
+
+    node_modules/esbuild/lib/main.js:1292:20:
+      1292 │       let promise = setup({
+           ╵                     ^
+
+    at setup (file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:39921:19)
+    at handlePlugins (/Users/xp/Documents/airport/demos/vite-demo/node_modules/esbuild/lib/main.js:1292:21)
+    at buildOrContextImpl (/Users/xp/Documents/airport/demos/vite-demo/node_modules/esbuild/lib/main.js:978:5)
+    at Object.buildOrContext (/Users/xp/Documents/airport/demos/vite-demo/node_modules/esbuild/lib/main.js:786:5)
+    at /Users/xp/Documents/airport/demos/vite-demo/node_modules/esbuild/lib/main.js:2186:68
+    at new Promise (<anonymous>)
+    at Object.context (/Users/xp/Documents/airport/demos/vite-demo/node_modules/esbuild/lib/main.js:2186:27)
+    at Object.context (/Users/xp/Documents/airport/demos/vite-demo/node_modules/esbuild/lib/main.js:2026:58)
+    at prepareEsbuildOptimizerRun (file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:45967:35)
+
+  The plugin "vite:dep-pre-bundle" was triggered by this import
+
+    node_modules/webpack/lib/wasm-async/AsyncWebAssemblyParser.js:8:18:
+      8 │ const t = require("@webassemblyjs/ast");
+        ╵                   ~~~~~~~~~~~~~~~~~~~~
+
+✘ [ERROR] Failed to resolve entry for package "@webassemblyjs/wasm-parser". The package may have incorrect main/module/exports specified in its package.json. [plugin vite:dep-pre-bundle]
+
+    node_modules/esbuild/lib/main.js:1373:21:
+      1373 │         let result = await callback({
+           ╵                      ^
+
+    at packageEntryFailure (file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:28691:11)
+    at resolvePackageEntry (file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:28688:5)
+    at tryNodeResolve (file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:28419:20)
+    at Context.resolveId (file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:28180:28)
+    at Object.resolveId (file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:44207:64)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:65837:21
+    at async file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:39941:34
+    at async requestCallbacks.on-resolve (/Users/xp/Documents/airport/demos/vite-demo/node_modules/esbuild/lib/main.js:1373:22)
+    at async handleRequest (/Users/xp/Documents/airport/demos/vite-demo/node_modules/esbuild/lib/main.js:729:13)
+
+  This error came from the "onResolve" callback registered here:
+
+    node_modules/esbuild/lib/main.js:1292:20:
+      1292 │       let promise = setup({
+           ╵                     ^
+
+    at setup (file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:39921:19)
+    at handlePlugins (/Users/xp/Documents/airport/demos/vite-demo/node_modules/esbuild/lib/main.js:1292:21)
+    at buildOrContextImpl (/Users/xp/Documents/airport/demos/vite-demo/node_modules/esbuild/lib/main.js:978:5)
+    at Object.buildOrContext (/Users/xp/Documents/airport/demos/vite-demo/node_modules/esbuild/lib/main.js:786:5)
+    at /Users/xp/Documents/airport/demos/vite-demo/node_modules/esbuild/lib/main.js:2186:68
+    at new Promise (<anonymous>)
+    at Object.context (/Users/xp/Documents/airport/demos/vite-demo/node_modules/esbuild/lib/main.js:2186:27)
+    at Object.context (/Users/xp/Documents/airport/demos/vite-demo/node_modules/esbuild/lib/main.js:2026:58)
+    at prepareEsbuildOptimizerRun (file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:45967:35)
+
+  The plugin "vite:dep-pre-bundle" was triggered by this import
+
+    node_modules/webpack/lib/wasm-sync/WebAssemblyParser.js:10:27:
+      10 │ const { decode } = require("@webassemblyjs/wasm-parser");
+         ╵                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+✘ [ERROR] Failed to resolve entry for package "@webassemblyjs/wasm-parser". The package may have incorrect main/module/exports specified in its package.json. [plugin vite:dep-pre-bundle]
+
+    node_modules/esbuild/lib/main.js:1373:21:
+      1373 │         let result = await callback({
+           ╵                      ^
+
+    at packageEntryFailure (file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:28691:11)
+    at resolvePackageEntry (file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:28688:5)
+    at tryNodeResolve (file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:28419:20)
+    at Context.resolveId (file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:28180:28)
+    at Object.resolveId (file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:44207:64)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:65837:21
+    at async file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:39941:34
+    at async requestCallbacks.on-resolve (/Users/xp/Documents/airport/demos/vite-demo/node_modules/esbuild/lib/main.js:1373:22)
+    at async handleRequest (/Users/xp/Documents/airport/demos/vite-demo/node_modules/esbuild/lib/main.js:729:13)
+
+  This error came from the "onResolve" callback registered here:
+
+    node_modules/esbuild/lib/main.js:1292:20:
+      1292 │       let promise = setup({
+           ╵                     ^
+
+    at setup (file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:39921:19)
+    at handlePlugins (/Users/xp/Documents/airport/demos/vite-demo/node_modules/esbuild/lib/main.js:1292:21)
+    at buildOrContextImpl (/Users/xp/Documents/airport/demos/vite-demo/node_modules/esbuild/lib/main.js:978:5)
+    at Object.buildOrContext (/Users/xp/Documents/airport/demos/vite-demo/node_modules/esbuild/lib/main.js:786:5)
+    at /Users/xp/Documents/airport/demos/vite-demo/node_modules/esbuild/lib/main.js:2186:68
+    at new Promise (<anonymous>)
+    at Object.context (/Users/xp/Documents/airport/demos/vite-demo/node_modules/esbuild/lib/main.js:2186:27)
+    at Object.context (/Users/xp/Documents/airport/demos/vite-demo/node_modules/esbuild/lib/main.js:2026:58)
+    at prepareEsbuildOptimizerRun (file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:45967:35)
+
+  The plugin "vite:dep-pre-bundle" was triggered by this import
+
+    node_modules/webpack/lib/wasm-async/AsyncWebAssemblyParser.js:9:27:
+      9 │ const { decode } = require("@webassemblyjs/wasm-parser");
+        ╵                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+✘ [ERROR] Failed to resolve entry for package "@webassemblyjs/ast". The package may have incorrect main/module/exports specified in its package.json. [plugin vite:dep-pre-bundle]
+
+    node_modules/esbuild/lib/main.js:1373:21:
+      1373 │         let result = await callback({
+           ╵                      ^
+
+    at packageEntryFailure (file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:28691:11)
+    at resolvePackageEntry (file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:28688:5)
+    at tryNodeResolve (file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:28419:20)
+    at Context.resolveId (file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:28180:28)
+    at Object.resolveId (file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:44207:64)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:65837:21
+    at async file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:39941:34
+    at async requestCallbacks.on-resolve (/Users/xp/Documents/airport/demos/vite-demo/node_modules/esbuild/lib/main.js:1373:22)
+    at async handleRequest (/Users/xp/Documents/airport/demos/vite-demo/node_modules/esbuild/lib/main.js:729:13)
+
+  This error came from the "onResolve" callback registered here:
+
+    node_modules/esbuild/lib/main.js:1292:20:
+      1292 │       let promise = setup({
+           ╵                     ^
+
+    at setup (file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:39921:19)
+    at handlePlugins (/Users/xp/Documents/airport/demos/vite-demo/node_modules/esbuild/lib/main.js:1292:21)
+    at buildOrContextImpl (/Users/xp/Documents/airport/demos/vite-demo/node_modules/esbuild/lib/main.js:978:5)
+    at Object.buildOrContext (/Users/xp/Documents/airport/demos/vite-demo/node_modules/esbuild/lib/main.js:786:5)
+    at /Users/xp/Documents/airport/demos/vite-demo/node_modules/esbuild/lib/main.js:2186:68
+    at new Promise (<anonymous>)
+    at Object.context (/Users/xp/Documents/airport/demos/vite-demo/node_modules/esbuild/lib/main.js:2186:27)
+    at Object.context (/Users/xp/Documents/airport/demos/vite-demo/node_modules/esbuild/lib/main.js:2026:58)
+    at prepareEsbuildOptimizerRun (file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:45967:35)
+
+  The plugin "vite:dep-pre-bundle" was triggered by this import
+
+    node_modules/webpack/lib/wasm-sync/WebAssemblyGenerator.js:12:18:
+      12 │ const t = require("@webassemblyjs/ast");
+         ╵                   ~~~~~~~~~~~~~~~~~~~~
+
+✘ [ERROR] Failed to resolve entry for package "@webassemblyjs/wasm-edit". The package may have incorrect main/module/exports specified in its package.json. [plugin vite:dep-pre-bundle]
+
+    node_modules/esbuild/lib/main.js:1373:21:
+      1373 │         let result = await callback({
+           ╵                      ^
+
+    at packageEntryFailure (file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:28691:11)
+    at resolvePackageEntry (file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:28688:5)
+    at tryNodeResolve (file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:28419:20)
+    at Context.resolveId (file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:28180:28)
+    at Object.resolveId (file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:44207:64)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:65837:21
+    at async file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:39941:34
+    at async requestCallbacks.on-resolve (/Users/xp/Documents/airport/demos/vite-demo/node_modules/esbuild/lib/main.js:1373:22)
+    at async handleRequest (/Users/xp/Documents/airport/demos/vite-demo/node_modules/esbuild/lib/main.js:729:13)
+
+  This error came from the "onResolve" callback registered here:
+
+    node_modules/esbuild/lib/main.js:1292:20:
+      1292 │       let promise = setup({
+           ╵                     ^
+
+    at setup (file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:39921:19)
+    at handlePlugins (/Users/xp/Documents/airport/demos/vite-demo/node_modules/esbuild/lib/main.js:1292:21)
+    at buildOrContextImpl (/Users/xp/Documents/airport/demos/vite-demo/node_modules/esbuild/lib/main.js:978:5)
+    at Object.buildOrContext (/Users/xp/Documents/airport/demos/vite-demo/node_modules/esbuild/lib/main.js:786:5)
+    at /Users/xp/Documents/airport/demos/vite-demo/node_modules/esbuild/lib/main.js:2186:68
+    at new Promise (<anonymous>)
+    at Object.context (/Users/xp/Documents/airport/demos/vite-demo/node_modules/esbuild/lib/main.js:2186:27)
+    at Object.context (/Users/xp/Documents/airport/demos/vite-demo/node_modules/esbuild/lib/main.js:2026:58)
+    at prepareEsbuildOptimizerRun (file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:45967:35)
+
+  The plugin "vite:dep-pre-bundle" was triggered by this import
+
+    node_modules/webpack/lib/wasm-sync/WebAssemblyGenerator.js:14:44:
+      14 │ ...{ editWithAST, addWithAST } = require("@webassemblyjs/wasm-edit");
+         ╵                                          ~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+✘ [ERROR] Failed to resolve entry for package "@webassemblyjs/wasm-parser". The package may have incorrect main/module/exports specified in its package.json. [plugin vite:dep-pre-bundle]
+
+    node_modules/esbuild/lib/main.js:1373:21:
+      1373 │         let result = await callback({
+           ╵                      ^
+
+    at packageEntryFailure (file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:28691:11)
+    at resolvePackageEntry (file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:28688:5)
+    at tryNodeResolve (file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:28419:20)
+    at Context.resolveId (file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:28180:28)
+    at Object.resolveId (file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:44207:64)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:65837:21
+    at async file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:39941:34
+    at async requestCallbacks.on-resolve (/Users/xp/Documents/airport/demos/vite-demo/node_modules/esbuild/lib/main.js:1373:22)
+    at async handleRequest (/Users/xp/Documents/airport/demos/vite-demo/node_modules/esbuild/lib/main.js:729:13)
+
+  This error came from the "onResolve" callback registered here:
+
+    node_modules/esbuild/lib/main.js:1292:20:
+      1292 │       let promise = setup({
+           ╵                     ^
+
+    at setup (file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:39921:19)
+    at handlePlugins (/Users/xp/Documents/airport/demos/vite-demo/node_modules/esbuild/lib/main.js:1292:21)
+    at buildOrContextImpl (/Users/xp/Documents/airport/demos/vite-demo/node_modules/esbuild/lib/main.js:978:5)
+    at Object.buildOrContext (/Users/xp/Documents/airport/demos/vite-demo/node_modules/esbuild/lib/main.js:786:5)
+    at /Users/xp/Documents/airport/demos/vite-demo/node_modules/esbuild/lib/main.js:2186:68
+    at new Promise (<anonymous>)
+    at Object.context (/Users/xp/Documents/airport/demos/vite-demo/node_modules/esbuild/lib/main.js:2186:27)
+    at Object.context (/Users/xp/Documents/airport/demos/vite-demo/node_modules/esbuild/lib/main.js:2026:58)
+    at prepareEsbuildOptimizerRun (file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:45967:35)
+
+  The plugin "vite:dep-pre-bundle" was triggered by this import
+
+    node_modules/webpack/lib/wasm-sync/WebAssemblyGenerator.js:15:27:
+      15 │ const { decode } = require("@webassemblyjs/wasm-parser");
+         ╵                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+✘ [ERROR] Could not resolve "uglify-js"
+
+    node_modules/terser-webpack-plugin/dist/utils.js:409:14:
+      409 │   } = require("uglify-js");
+          ╵               ~~~~~~~~~~~
+
+  You can mark the path "uglify-js" as external to exclude it from the bundle, which will remove this error. You can also surround this "require" call with a try/catch block to handle this failure at run-time instead of bundle-time.
+
+✘ [ERROR] Could not resolve "__temporal_custom_payload_converter"
+
+    node_modules/@temporalio/workflow/lib/worker-interface.js:87:43:
+      87 │ ...er = require('__temporal_custom_payload_converter').payloadConv...
+         ╵                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  You can mark the path "__temporal_custom_payload_converter" as external to exclude it from the bundle, which will remove this error. You can also surround this "require" call with a try/catch block to handle this failure at run-time instead of bundle-time.
+
+✘ [ERROR] Could not resolve "@swc/wasm"
+
+    node_modules/@swc/core/index.js:70:35:
+      70 │         fallbackBindings = require('@swc/wasm');
+         ╵                                    ~~~~~~~~~~~
+
+  You can mark the path "@swc/wasm" as external to exclude it from the bundle, which will remove this error. You can also surround this "require" call with a try/catch block to handle this failure at run-time instead of bundle-time.
+
+✘ [ERROR] Could not resolve "__temporal_custom_failure_converter"
+
+    node_modules/@temporalio/workflow/lib/worker-interface.js:94:43:
+      94 │ ...er = require('__temporal_custom_failure_converter').failureConv...
+         ╵                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  You can mark the path "__temporal_custom_failure_converter" as external to exclude it from the bundle, which will remove this error. You can also surround this "require" call with a try/catch block to handle this failure at run-time instead of bundle-time.
+
+✘ [ERROR] No loader is configured for ".node" files: node_modules/@swc/core-darwin-arm64/swc.darwin-arm64.node
+
+    node_modules/@swc/core/binding.js:145:48:
+      145 │ ...               nativeBinding = require('@swc/core-darwin-arm64');
+          ╵                                           ~~~~~~~~~~~~~~~~~~~~~~~~
+
+/Users/xp/Documents/airport/demos/vite-demo/node_modules/esbuild/lib/main.js:1649
+  let error = new Error(`${text}${summary}`);
+              ^
+
+Error: Build failed with 12 errors:
+node_modules/@swc/core/binding.js:145:48: ERROR: No loader is configured for ".node" files: node_modules/@swc/core-darwin-arm64/swc.darwin-arm64.node
+node_modules/@swc/core/index.js:70:35: ERROR: Could not resolve "@swc/wasm"
+node_modules/@temporalio/workflow/lib/worker-interface.js:87:43: ERROR: Could not resolve "__temporal_custom_payload_converter"
+node_modules/@temporalio/workflow/lib/worker-interface.js:94:43: ERROR: Could not resolve "__temporal_custom_failure_converter"
+node_modules/esbuild/lib/main.js:1373:21: ERROR: [plugin: vite:dep-pre-bundle] Failed to resolve entry for package "@webassemblyjs/ast". The package may have incorrect main/module/exports specified in its package.json.
+...
+    at failureErrorWithLog (/Users/xp/Documents/airport/demos/vite-demo/node_modules/esbuild/lib/main.js:1649:15)
+    at /Users/xp/Documents/airport/demos/vite-demo/node_modules/esbuild/lib/main.js:1058:25
+    at /Users/xp/Documents/airport/demos/vite-demo/node_modules/esbuild/lib/main.js:1525:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  errors: [
+    {
+      detail: undefined,
+      id: '',
+      location: {
+        column: 48,
+        file: 'node_modules/@swc/core/binding.js',
+        length: 24,
+        line: 145,
+        lineText: "                        nativeBinding = require('@swc/core-darwin-arm64');",
+        namespace: '',
+        suggestion: ''
+      },
+      notes: [],
+      pluginName: '',
+      text: 'No loader is configured for ".node" files: node_modules/@swc/core-darwin-arm64/swc.darwin-arm64.node'
+    },
+    {
+      detail: undefined,
+      id: '',
+      location: {
+        column: 35,
+        file: 'node_modules/@swc/core/index.js',
+        length: 11,
+        line: 70,
+        lineText: "        fallbackBindings = require('@swc/wasm');",
+        namespace: '',
+        suggestion: ''
+      },
+      notes: [
+        {
+          location: null,
+          text: 'You can mark the path "@swc/wasm" as external to exclude it from the bundle, which will remove this error. You can also surround this "require" call with a try/catch block to handle this failure at run-time instead of bundle-time.'
+        }
+      ],
+      pluginName: '',
+      text: 'Could not resolve "@swc/wasm"'
+    },
+    {
+      detail: undefined,
+      id: '',
+      location: {
+        column: 43,
+        file: 'node_modules/@temporalio/workflow/lib/worker-interface.js',
+        length: 37,
+        line: 87,
+        lineText: "    const customPayloadConverter = require('__temporal_custom_payload_converter').payloadConverter;",
+        namespace: '',
+        suggestion: ''
+      },
+      notes: [
+        {
+          location: null,
+          text: 'You can mark the path "__temporal_custom_payload_converter" as external to exclude it from the bundle, which will remove this error. You can also surround this "require" call with a try/catch block to handle this failure at run-time instead of bundle-time.'
+        }
+      ],
+      pluginName: '',
+      text: 'Could not resolve "__temporal_custom_payload_converter"'
+    },
+    {
+      detail: undefined,
+      id: '',
+      location: {
+        column: 43,
+        file: 'node_modules/@temporalio/workflow/lib/worker-interface.js',
+        length: 37,
+        line: 94,
+        lineText: "    const customFailureConverter = require('__temporal_custom_failure_converter').failureConverter;",
+        namespace: '',
+        suggestion: ''
+      },
+      notes: [
+        {
+          location: null,
+          text: 'You can mark the path "__temporal_custom_failure_converter" as external to exclude it from the bundle, which will remove this error. You can also surround this "require" call with a try/catch block to handle this failure at run-time instead of bundle-time.'
+        }
+      ],
+      pluginName: '',
+      text: 'Could not resolve "__temporal_custom_failure_converter"'
+    },
+    {
+      detail: Error: Failed to resolve entry for package "@webassemblyjs/ast". The package may have incorrect main/module/exports specified in its package.json.
+          at packageEntryFailure (file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:28691:11)
+          at resolvePackageEntry (file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:28688:5)
+          at tryNodeResolve (file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:28419:20)
+          at Context.resolveId (file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:28180:28)
+          at Object.resolveId (file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:44207:64)
+          at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+          at async file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:65837:21
+          at async file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:39941:34
+          at async requestCallbacks.on-resolve (/Users/xp/Documents/airport/demos/vite-demo/node_modules/esbuild/lib/main.js:1373:22)
+          at async handleRequest (/Users/xp/Documents/airport/demos/vite-demo/node_modules/esbuild/lib/main.js:729:13),
+      id: '',
+      location: {
+        column: 21,
+        file: 'node_modules/esbuild/lib/main.js',
+        length: 0,
+        line: 1373,
+        lineText: '        let result = await callback({\n' +
+          '    at packageEntryFailure (file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:28691:11)\n' +
+          '    at resolvePackageEntry (file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:28688:5)\n' +
+          '    at tryNodeResolve (file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:28419:20)\n' +
+          '    at Context.resolveId (file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:28180:28)\n' +
+          '    at Object.resolveId (file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:44207:64)\n' +
+          '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+          '    at async file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:65837:21\n' +
+          '    at async file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:39941:34\n' +
+          '    at async requestCallbacks.on-resolve (/Users/xp/Documents/airport/demos/vite-demo/node_modules/esbuild/lib/main.js:1373:22)\n' +
+          '    at async handleRequest (/Users/xp/Documents/airport/demos/vite-demo/node_modules/esbuild/lib/main.js:729:13)',
+        namespace: 'file',
+        suggestion: ''
+      },
+      notes: [
+        {
+          location: {
+            column: 20,
+            file: 'node_modules/esbuild/lib/main.js',
+            length: 0,
+            line: 1292,
+            lineText: '      let promise = setup({\n' +
+              '    at setup (file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:39921:19)\n' +
+              '    at handlePlugins (/Users/xp/Documents/airport/demos/vite-demo/node_modules/esbuild/lib/main.js:1292:21)\n' +
+              '    at buildOrContextImpl (/Users/xp/Documents/airport/demos/vite-demo/node_modules/esbuild/lib/main.js:978:5)\n' +
+              '    at Object.buildOrContext (/Users/xp/Documents/airport/demos/vite-demo/node_modules/esbuild/lib/main.js:786:5)\n' +
+              '    at /Users/xp/Documents/airport/demos/vite-demo/node_modules/esbuild/lib/main.js:2186:68\n' +
+              '    at new Promise (<anonymous>)\n' +
+              '    at Object.context (/Users/xp/Documents/airport/demos/vite-demo/node_modules/esbuild/lib/main.js:2186:27)\n' +
+              '    at Object.context (/Users/xp/Documents/airport/demos/vite-demo/node_modules/esbuild/lib/main.js:2026:58)\n' +
+              '    at prepareEsbuildOptimizerRun (file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:45967:35)',
+            namespace: 'file',
+            suggestion: ''
+          },
+          text: 'This error came from the "onResolve" callback registered here:'
+        },
+        {
+          location: {
+            column: 18,
+            file: 'node_modules/webpack/lib/wasm-sync/WebAssemblyParser.js',
+            length: 20,
+            line: 8,
+            lineText: 'const t = require("@webassemblyjs/ast");',
+            namespace: '',
+            suggestion: ''
+          },
+          text: 'The plugin "vite:dep-pre-bundle" was triggered by this import'
+        }
+      ],
+      pluginName: 'vite:dep-pre-bundle',
+      text: 'Failed to resolve entry for package "@webassemblyjs/ast". The package may have incorrect main/module/exports specified in its package.json.'
+    },
+    {
+      detail: Error: Failed to resolve entry for package "@webassemblyjs/ast". The package may have incorrect main/module/exports specified in its package.json.
+          at packageEntryFailure (file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:28691:11)
+          at resolvePackageEntry (file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:28688:5)
+          at tryNodeResolve (file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:28419:20)
+          at Context.resolveId (file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:28180:28)
+          at Object.resolveId (file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:44207:64)
+          at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+          at async file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:65837:21
+          at async file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:39941:34
+          at async requestCallbacks.on-resolve (/Users/xp/Documents/airport/demos/vite-demo/node_modules/esbuild/lib/main.js:1373:22)
+          at async handleRequest (/Users/xp/Documents/airport/demos/vite-demo/node_modules/esbuild/lib/main.js:729:13),
+      id: '',
+      location: {
+        column: 21,
+        file: 'node_modules/esbuild/lib/main.js',
+        length: 0,
+        line: 1373,
+        lineText: '        let result = await callback({\n' +
+          '    at packageEntryFailure (file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:28691:11)\n' +
+          '    at resolvePackageEntry (file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:28688:5)\n' +
+          '    at tryNodeResolve (file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:28419:20)\n' +
+          '    at Context.resolveId (file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:28180:28)\n' +
+          '    at Object.resolveId (file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:44207:64)\n' +
+          '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+          '    at async file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:65837:21\n' +
+          '    at async file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:39941:34\n' +
+          '    at async requestCallbacks.on-resolve (/Users/xp/Documents/airport/demos/vite-demo/node_modules/esbuild/lib/main.js:1373:22)\n' +
+          '    at async handleRequest (/Users/xp/Documents/airport/demos/vite-demo/node_modules/esbuild/lib/main.js:729:13)',
+        namespace: 'file',
+        suggestion: ''
+      },
+      notes: [
+        {
+          location: {
+            column: 20,
+            file: 'node_modules/esbuild/lib/main.js',
+            length: 0,
+            line: 1292,
+            lineText: '      let promise = setup({\n' +
+              '    at setup (file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:39921:19)\n' +
+              '    at handlePlugins (/Users/xp/Documents/airport/demos/vite-demo/node_modules/esbuild/lib/main.js:1292:21)\n' +
+              '    at buildOrContextImpl (/Users/xp/Documents/airport/demos/vite-demo/node_modules/esbuild/lib/main.js:978:5)\n' +
+              '    at Object.buildOrContext (/Users/xp/Documents/airport/demos/vite-demo/node_modules/esbuild/lib/main.js:786:5)\n' +
+              '    at /Users/xp/Documents/airport/demos/vite-demo/node_modules/esbuild/lib/main.js:2186:68\n' +
+              '    at new Promise (<anonymous>)\n' +
+              '    at Object.context (/Users/xp/Documents/airport/demos/vite-demo/node_modules/esbuild/lib/main.js:2186:27)\n' +
+              '    at Object.context (/Users/xp/Documents/airport/demos/vite-demo/node_modules/esbuild/lib/main.js:2026:58)\n' +
+              '    at prepareEsbuildOptimizerRun (file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:45967:35)',
+            namespace: 'file',
+            suggestion: ''
+          },
+          text: 'This error came from the "onResolve" callback registered here:'
+        },
+        {
+          location: {
+            column: 18,
+            file: 'node_modules/webpack/lib/wasm-async/AsyncWebAssemblyParser.js',
+            length: 20,
+            line: 8,
+            lineText: 'const t = require("@webassemblyjs/ast");',
+            namespace: '',
+            suggestion: ''
+          },
+          text: 'The plugin "vite:dep-pre-bundle" was triggered by this import'
+        }
+      ],
+      pluginName: 'vite:dep-pre-bundle',
+      text: 'Failed to resolve entry for package "@webassemblyjs/ast". The package may have incorrect main/module/exports specified in its package.json.'
+    },
+    {
+      detail: Error: Failed to resolve entry for package "@webassemblyjs/ast". The package may have incorrect main/module/exports specified in its package.json.
+          at packageEntryFailure (file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:28691:11)
+          at resolvePackageEntry (file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:28688:5)
+          at tryNodeResolve (file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:28419:20)
+          at Context.resolveId (file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:28180:28)
+          at Object.resolveId (file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:44207:64)
+          at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+          at async file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:65837:21
+          at async file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:39941:34
+          at async requestCallbacks.on-resolve (/Users/xp/Documents/airport/demos/vite-demo/node_modules/esbuild/lib/main.js:1373:22)
+          at async handleRequest (/Users/xp/Documents/airport/demos/vite-demo/node_modules/esbuild/lib/main.js:729:13),
+      id: '',
+      location: {
+        column: 21,
+        file: 'node_modules/esbuild/lib/main.js',
+        length: 0,
+        line: 1373,
+        lineText: '        let result = await callback({\n' +
+          '    at packageEntryFailure (file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:28691:11)\n' +
+          '    at resolvePackageEntry (file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:28688:5)\n' +
+          '    at tryNodeResolve (file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:28419:20)\n' +
+          '    at Context.resolveId (file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:28180:28)\n' +
+          '    at Object.resolveId (file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:44207:64)\n' +
+          '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+          '    at async file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:65837:21\n' +
+          '    at async file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:39941:34\n' +
+          '    at async requestCallbacks.on-resolve (/Users/xp/Documents/airport/demos/vite-demo/node_modules/esbuild/lib/main.js:1373:22)\n' +
+          '    at async handleRequest (/Users/xp/Documents/airport/demos/vite-demo/node_modules/esbuild/lib/main.js:729:13)',
+        namespace: 'file',
+        suggestion: ''
+      },
+      notes: [
+        {
+          location: {
+            column: 20,
+            file: 'node_modules/esbuild/lib/main.js',
+            length: 0,
+            line: 1292,
+            lineText: '      let promise = setup({\n' +
+              '    at setup (file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:39921:19)\n' +
+              '    at handlePlugins (/Users/xp/Documents/airport/demos/vite-demo/node_modules/esbuild/lib/main.js:1292:21)\n' +
+              '    at buildOrContextImpl (/Users/xp/Documents/airport/demos/vite-demo/node_modules/esbuild/lib/main.js:978:5)\n' +
+              '    at Object.buildOrContext (/Users/xp/Documents/airport/demos/vite-demo/node_modules/esbuild/lib/main.js:786:5)\n' +
+              '    at /Users/xp/Documents/airport/demos/vite-demo/node_modules/esbuild/lib/main.js:2186:68\n' +
+              '    at new Promise (<anonymous>)\n' +
+              '    at Object.context (/Users/xp/Documents/airport/demos/vite-demo/node_modules/esbuild/lib/main.js:2186:27)\n' +
+              '    at Object.context (/Users/xp/Documents/airport/demos/vite-demo/node_modules/esbuild/lib/main.js:2026:58)\n' +
+              '    at prepareEsbuildOptimizerRun (file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:45967:35)',
+            namespace: 'file',
+            suggestion: ''
+          },
+          text: 'This error came from the "onResolve" callback registered here:'
+        },
+        {
+          location: {
+            column: 18,
+            file: 'node_modules/webpack/lib/wasm-sync/WebAssemblyGenerator.js',
+            length: 20,
+            line: 12,
+            lineText: 'const t = require("@webassemblyjs/ast");',
+            namespace: '',
+            suggestion: ''
+          },
+          text: 'The plugin "vite:dep-pre-bundle" was triggered by this import'
+        }
+      ],
+      pluginName: 'vite:dep-pre-bundle',
+      text: 'Failed to resolve entry for package "@webassemblyjs/ast". The package may have incorrect main/module/exports specified in its package.json.'
+    },
+    {
+      detail: Error: Failed to resolve entry for package "@webassemblyjs/wasm-edit". The package may have incorrect main/module/exports specified in its package.json.
+          at packageEntryFailure (file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:28691:11)
+          at resolvePackageEntry (file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:28688:5)
+          at tryNodeResolve (file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:28419:20)
+          at Context.resolveId (file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:28180:28)
+          at Object.resolveId (file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:44207:64)
+          at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+          at async file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:65837:21
+          at async file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:39941:34
+          at async requestCallbacks.on-resolve (/Users/xp/Documents/airport/demos/vite-demo/node_modules/esbuild/lib/main.js:1373:22)
+          at async handleRequest (/Users/xp/Documents/airport/demos/vite-demo/node_modules/esbuild/lib/main.js:729:13),
+      id: '',
+      location: {
+        column: 21,
+        file: 'node_modules/esbuild/lib/main.js',
+        length: 0,
+        line: 1373,
+        lineText: '        let result = await callback({\n' +
+          '    at packageEntryFailure (file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:28691:11)\n' +
+          '    at resolvePackageEntry (file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:28688:5)\n' +
+          '    at tryNodeResolve (file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:28419:20)\n' +
+          '    at Context.resolveId (file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:28180:28)\n' +
+          '    at Object.resolveId (file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:44207:64)\n' +
+          '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+          '    at async file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:65837:21\n' +
+          '    at async file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:39941:34\n' +
+          '    at async requestCallbacks.on-resolve (/Users/xp/Documents/airport/demos/vite-demo/node_modules/esbuild/lib/main.js:1373:22)\n' +
+          '    at async handleRequest (/Users/xp/Documents/airport/demos/vite-demo/node_modules/esbuild/lib/main.js:729:13)',
+        namespace: 'file',
+        suggestion: ''
+      },
+      notes: [
+        {
+          location: {
+            column: 20,
+            file: 'node_modules/esbuild/lib/main.js',
+            length: 0,
+            line: 1292,
+            lineText: '      let promise = setup({\n' +
+              '    at setup (file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:39921:19)\n' +
+              '    at handlePlugins (/Users/xp/Documents/airport/demos/vite-demo/node_modules/esbuild/lib/main.js:1292:21)\n' +
+              '    at buildOrContextImpl (/Users/xp/Documents/airport/demos/vite-demo/node_modules/esbuild/lib/main.js:978:5)\n' +
+              '    at Object.buildOrContext (/Users/xp/Documents/airport/demos/vite-demo/node_modules/esbuild/lib/main.js:786:5)\n' +
+              '    at /Users/xp/Documents/airport/demos/vite-demo/node_modules/esbuild/lib/main.js:2186:68\n' +
+              '    at new Promise (<anonymous>)\n' +
+              '    at Object.context (/Users/xp/Documents/airport/demos/vite-demo/node_modules/esbuild/lib/main.js:2186:27)\n' +
+              '    at Object.context (/Users/xp/Documents/airport/demos/vite-demo/node_modules/esbuild/lib/main.js:2026:58)\n' +
+              '    at prepareEsbuildOptimizerRun (file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:45967:35)',
+            namespace: 'file',
+            suggestion: ''
+          },
+          text: 'This error came from the "onResolve" callback registered here:'
+        },
+        {
+          location: {
+            column: 44,
+            file: 'node_modules/webpack/lib/wasm-sync/WebAssemblyGenerator.js',
+            length: 26,
+            line: 14,
+            lineText: 'const { editWithAST, addWithAST } = require("@webassemblyjs/wasm-edit");',
+            namespace: '',
+            suggestion: ''
+          },
+          text: 'The plugin "vite:dep-pre-bundle" was triggered by this import'
+        }
+      ],
+      pluginName: 'vite:dep-pre-bundle',
+      text: 'Failed to resolve entry for package "@webassemblyjs/wasm-edit". The package may have incorrect main/module/exports specified in its package.json.'
+    },
+    {
+      detail: Error: Failed to resolve entry for package "@webassemblyjs/wasm-parser". The package may have incorrect main/module/exports specified in its package.json.
+          at packageEntryFailure (file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:28691:11)
+          at resolvePackageEntry (file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:28688:5)
+          at tryNodeResolve (file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:28419:20)
+          at Context.resolveId (file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:28180:28)
+          at Object.resolveId (file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:44207:64)
+          at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+          at async file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:65837:21
+          at async file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:39941:34
+          at async requestCallbacks.on-resolve (/Users/xp/Documents/airport/demos/vite-demo/node_modules/esbuild/lib/main.js:1373:22)
+          at async handleRequest (/Users/xp/Documents/airport/demos/vite-demo/node_modules/esbuild/lib/main.js:729:13),
+      id: '',
+      location: {
+        column: 21,
+        file: 'node_modules/esbuild/lib/main.js',
+        length: 0,
+        line: 1373,
+        lineText: '        let result = await callback({\n' +
+          '    at packageEntryFailure (file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:28691:11)\n' +
+          '    at resolvePackageEntry (file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:28688:5)\n' +
+          '    at tryNodeResolve (file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:28419:20)\n' +
+          '    at Context.resolveId (file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:28180:28)\n' +
+          '    at Object.resolveId (file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:44207:64)\n' +
+          '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+          '    at async file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:65837:21\n' +
+          '    at async file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:39941:34\n' +
+          '    at async requestCallbacks.on-resolve (/Users/xp/Documents/airport/demos/vite-demo/node_modules/esbuild/lib/main.js:1373:22)\n' +
+          '    at async handleRequest (/Users/xp/Documents/airport/demos/vite-demo/node_modules/esbuild/lib/main.js:729:13)',
+        namespace: 'file',
+        suggestion: ''
+      },
+      notes: [
+        {
+          location: {
+            column: 20,
+            file: 'node_modules/esbuild/lib/main.js',
+            length: 0,
+            line: 1292,
+            lineText: '      let promise = setup({\n' +
+              '    at setup (file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:39921:19)\n' +
+              '    at handlePlugins (/Users/xp/Documents/airport/demos/vite-demo/node_modules/esbuild/lib/main.js:1292:21)\n' +
+              '    at buildOrContextImpl (/Users/xp/Documents/airport/demos/vite-demo/node_modules/esbuild/lib/main.js:978:5)\n' +
+              '    at Object.buildOrContext (/Users/xp/Documents/airport/demos/vite-demo/node_modules/esbuild/lib/main.js:786:5)\n' +
+              '    at /Users/xp/Documents/airport/demos/vite-demo/node_modules/esbuild/lib/main.js:2186:68\n' +
+              '    at new Promise (<anonymous>)\n' +
+              '    at Object.context (/Users/xp/Documents/airport/demos/vite-demo/node_modules/esbuild/lib/main.js:2186:27)\n' +
+              '    at Object.context (/Users/xp/Documents/airport/demos/vite-demo/node_modules/esbuild/lib/main.js:2026:58)\n' +
+              '    at prepareEsbuildOptimizerRun (file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:45967:35)',
+            namespace: 'file',
+            suggestion: ''
+          },
+          text: 'This error came from the "onResolve" callback registered here:'
+        },
+        {
+          location: {
+            column: 27,
+            file: 'node_modules/webpack/lib/wasm-sync/WebAssemblyParser.js',
+            length: 28,
+            line: 10,
+            lineText: 'const { decode } = require("@webassemblyjs/wasm-parser");',
+            namespace: '',
+            suggestion: ''
+          },
+          text: 'The plugin "vite:dep-pre-bundle" was triggered by this import'
+        }
+      ],
+      pluginName: 'vite:dep-pre-bundle',
+      text: 'Failed to resolve entry for package "@webassemblyjs/wasm-parser". The package may have incorrect main/module/exports specified in its package.json.'
+    },
+    {
+      detail: Error: Failed to resolve entry for package "@webassemblyjs/wasm-parser". The package may have incorrect main/module/exports specified in its package.json.
+          at packageEntryFailure (file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:28691:11)
+          at resolvePackageEntry (file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:28688:5)
+          at tryNodeResolve (file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:28419:20)
+          at Context.resolveId (file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:28180:28)
+          at Object.resolveId (file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:44207:64)
+          at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+          at async file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:65837:21
+          at async file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:39941:34
+          at async requestCallbacks.on-resolve (/Users/xp/Documents/airport/demos/vite-demo/node_modules/esbuild/lib/main.js:1373:22)
+          at async handleRequest (/Users/xp/Documents/airport/demos/vite-demo/node_modules/esbuild/lib/main.js:729:13),
+      id: '',
+      location: {
+        column: 21,
+        file: 'node_modules/esbuild/lib/main.js',
+        length: 0,
+        line: 1373,
+        lineText: '        let result = await callback({\n' +
+          '    at packageEntryFailure (file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:28691:11)\n' +
+          '    at resolvePackageEntry (file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:28688:5)\n' +
+          '    at tryNodeResolve (file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:28419:20)\n' +
+          '    at Context.resolveId (file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:28180:28)\n' +
+          '    at Object.resolveId (file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:44207:64)\n' +
+          '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+          '    at async file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:65837:21\n' +
+          '    at async file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:39941:34\n' +
+          '    at async requestCallbacks.on-resolve (/Users/xp/Documents/airport/demos/vite-demo/node_modules/esbuild/lib/main.js:1373:22)\n' +
+          '    at async handleRequest (/Users/xp/Documents/airport/demos/vite-demo/node_modules/esbuild/lib/main.js:729:13)',
+        namespace: 'file',
+        suggestion: ''
+      },
+      notes: [
+        {
+          location: {
+            column: 20,
+            file: 'node_modules/esbuild/lib/main.js',
+            length: 0,
+            line: 1292,
+            lineText: '      let promise = setup({\n' +
+              '    at setup (file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:39921:19)\n' +
+              '    at handlePlugins (/Users/xp/Documents/airport/demos/vite-demo/node_modules/esbuild/lib/main.js:1292:21)\n' +
+              '    at buildOrContextImpl (/Users/xp/Documents/airport/demos/vite-demo/node_modules/esbuild/lib/main.js:978:5)\n' +
+              '    at Object.buildOrContext (/Users/xp/Documents/airport/demos/vite-demo/node_modules/esbuild/lib/main.js:786:5)\n' +
+              '    at /Users/xp/Documents/airport/demos/vite-demo/node_modules/esbuild/lib/main.js:2186:68\n' +
+              '    at new Promise (<anonymous>)\n' +
+              '    at Object.context (/Users/xp/Documents/airport/demos/vite-demo/node_modules/esbuild/lib/main.js:2186:27)\n' +
+              '    at Object.context (/Users/xp/Documents/airport/demos/vite-demo/node_modules/esbuild/lib/main.js:2026:58)\n' +
+              '    at prepareEsbuildOptimizerRun (file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:45967:35)',
+            namespace: 'file',
+            suggestion: ''
+          },
+          text: 'This error came from the "onResolve" callback registered here:'
+        },
+        {
+          location: {
+            column: 27,
+            file: 'node_modules/webpack/lib/wasm-async/AsyncWebAssemblyParser.js',
+            length: 28,
+            line: 9,
+            lineText: 'const { decode } = require("@webassemblyjs/wasm-parser");',
+            namespace: '',
+            suggestion: ''
+          },
+          text: 'The plugin "vite:dep-pre-bundle" was triggered by this import'
+        }
+      ],
+      pluginName: 'vite:dep-pre-bundle',
+      text: 'Failed to resolve entry for package "@webassemblyjs/wasm-parser". The package may have incorrect main/module/exports specified in its package.json.'
+    },
+    {
+      detail: Error: Failed to resolve entry for package "@webassemblyjs/wasm-parser". The package may have incorrect main/module/exports specified in its package.json.
+          at packageEntryFailure (file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:28691:11)
+          at resolvePackageEntry (file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:28688:5)
+          at tryNodeResolve (file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:28419:20)
+          at Context.resolveId (file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:28180:28)
+          at Object.resolveId (file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:44207:64)
+          at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+          at async file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:65837:21
+          at async file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:39941:34
+          at async requestCallbacks.on-resolve (/Users/xp/Documents/airport/demos/vite-demo/node_modules/esbuild/lib/main.js:1373:22)
+          at async handleRequest (/Users/xp/Documents/airport/demos/vite-demo/node_modules/esbuild/lib/main.js:729:13),
+      id: '',
+      location: {
+        column: 21,
+        file: 'node_modules/esbuild/lib/main.js',
+        length: 0,
+        line: 1373,
+        lineText: '        let result = await callback({\n' +
+          '    at packageEntryFailure (file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:28691:11)\n' +
+          '    at resolvePackageEntry (file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:28688:5)\n' +
+          '    at tryNodeResolve (file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:28419:20)\n' +
+          '    at Context.resolveId (file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:28180:28)\n' +
+          '    at Object.resolveId (file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:44207:64)\n' +
+          '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+          '    at async file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:65837:21\n' +
+          '    at async file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:39941:34\n' +
+          '    at async requestCallbacks.on-resolve (/Users/xp/Documents/airport/demos/vite-demo/node_modules/esbuild/lib/main.js:1373:22)\n' +
+          '    at async handleRequest (/Users/xp/Documents/airport/demos/vite-demo/node_modules/esbuild/lib/main.js:729:13)',
+        namespace: 'file',
+        suggestion: ''
+      },
+      notes: [
+        {
+          location: {
+            column: 20,
+            file: 'node_modules/esbuild/lib/main.js',
+            length: 0,
+            line: 1292,
+            lineText: '      let promise = setup({\n' +
+              '    at setup (file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:39921:19)\n' +
+              '    at handlePlugins (/Users/xp/Documents/airport/demos/vite-demo/node_modules/esbuild/lib/main.js:1292:21)\n' +
+              '    at buildOrContextImpl (/Users/xp/Documents/airport/demos/vite-demo/node_modules/esbuild/lib/main.js:978:5)\n' +
+              '    at Object.buildOrContext (/Users/xp/Documents/airport/demos/vite-demo/node_modules/esbuild/lib/main.js:786:5)\n' +
+              '    at /Users/xp/Documents/airport/demos/vite-demo/node_modules/esbuild/lib/main.js:2186:68\n' +
+              '    at new Promise (<anonymous>)\n' +
+              '    at Object.context (/Users/xp/Documents/airport/demos/vite-demo/node_modules/esbuild/lib/main.js:2186:27)\n' +
+              '    at Object.context (/Users/xp/Documents/airport/demos/vite-demo/node_modules/esbuild/lib/main.js:2026:58)\n' +
+              '    at prepareEsbuildOptimizerRun (file:///Users/xp/Documents/airport/demos/vite-demo/node_modules/vite/dist/node/chunks/dep-df561101.js:45967:35)',
+            namespace: 'file',
+            suggestion: ''
+          },
+          text: 'This error came from the "onResolve" callback registered here:'
+        },
+        {
+          location: {
+            column: 27,
+            file: 'node_modules/webpack/lib/wasm-sync/WebAssemblyGenerator.js',
+            length: 28,
+            line: 15,
+            lineText: 'const { decode } = require("@webassemblyjs/wasm-parser");',
+            namespace: '',
+            suggestion: ''
+          },
+          text: 'The plugin "vite:dep-pre-bundle" was triggered by this import'
+        }
+      ],
+      pluginName: 'vite:dep-pre-bundle',
+      text: 'Failed to resolve entry for package "@webassemblyjs/wasm-parser". The package may have incorrect main/module/exports specified in its package.json.'
+    },
+    {
+      detail: undefined,
+      id: '',
+      location: {
+        column: 14,
+        file: 'node_modules/terser-webpack-plugin/dist/utils.js',
+        length: 11,
+        line: 409,
+        lineText: '  } = require("uglify-js");',
+        namespace: '',
+        suggestion: ''
+      },
+      notes: [
+        {
+          location: null,
+          text: 'You can mark the path "uglify-js" as external to exclude it from the bundle, which will remove this error. You can also surround this "require" call with a try/catch block to handle this failure at run-time instead of bundle-time.'
+        }
+      ],
+      pluginName: '',
+      text: 'Could not resolve "uglify-js"'
+    }
+  ],
+  warnings: []
+}
+
+Node.js v20.4.0
