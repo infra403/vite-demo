@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@ant-design/pro-components": "^2.6.22",
+    "@ethersproject/shims": "^5.7.0",
     "@temporalio/activity": "^1.8.6",
     "@temporalio/client": "^1.8.6",
     "@temporalio/common": "^1.8.6",
@@ -20,7 +21,8 @@
     "antd": "^5.9.2",
     "ethers": "5.7.2",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-native-get-random-values": "^1.9.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.21",

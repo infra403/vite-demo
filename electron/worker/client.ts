@@ -1,5 +1,4 @@
 import {Connection,Client} from "@temporalio/client";
-import {getPriceWorkflow} from "./worker.ts";
 
 let client: Client;
 export const initClient = async () => {
@@ -13,7 +12,7 @@ export const initClient = async () => {
 
 export const executeGetPrice = async () => {
     // Run example workflow and await its completion
-    const result = await client.workflow.execute(getPriceWorkflow, {
+    const result = await client.workflow.execute("gasPriceWorkflow", {
         taskQueue: 'test',
         workflowId: `my-business-id-${Date.now()}`,
     });

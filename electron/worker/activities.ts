@@ -1,4 +1,4 @@
-import {getProvider} from "./plugins/eth";
+import {getProvider} from "./plugins/eth.ts";
 
 
 export const helloWorld = async (name: string): Promise<string> => {

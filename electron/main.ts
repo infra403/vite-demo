@@ -1,6 +1,8 @@
-import { app, BrowserWindow } from 'electron'
+import {app, BrowserWindow, ipcMain} from 'electron'
 import path from 'node:path'
 import {IPCHandler} from "./ipc.ts";
+import {executeGetPrice, initClient} from "./worker/client.ts";
+import {initWorker} from "./worker/worker.ts";
 
 // The built directory structure
 //
@@ -66,4 +68,25 @@ let ipc:IPCHandler
 app.whenReady().then(() => {
   createWindow()
   ipc = new IPCHandler()
+
+  ipcMain.on("init", async (event, arg) => {
+    try {
+      await initWorker()
+      await initClient()
+      return {'data': '', 'success': true, 'message': ''}
+    }catch (e) {
+      return {'data': e, 'success': false, 'message': e.message}
+    }
+  })
+
+  ipcMain.on("getPrice", async (event, arg) => {
+    try {
+      const result = await executeGetPrice()
+      return {'data': result, 'success': true, 'message': ''}
+    }catch (e) {
+      return {'data': e, 'success': false, 'message': e.message}
+    }
+  })
+
 })
+
